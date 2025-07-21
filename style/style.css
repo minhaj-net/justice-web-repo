@@ -19,6 +19,9 @@ main {
   border-radius: 8;
   border: none;
 }
+.dark2 {
+  color: rgba(65, 64, 64, 1);
+}
 .dark3 {
   color: rgba(112, 112, 112, 1);
 }
@@ -76,6 +79,7 @@ main {
   border-radius: 30px;
 }
 .banner-img-container {
+  margin-top: 120px;
   position: relative;
   text-align: center;
 }
@@ -87,4 +91,30 @@ main {
 .input-and-btn {
   display: inline-block;
   margin-top: 20px;
+}
+
+/*  */
+
+/* media query for mobile responsive */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .banner-title {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  .banner-discription {
+    font-size: 1rem;
+    text-overflow: ellipsis;
+  }
+  .banner-input {
+    width: 150px;
+  }
+  .nav-iteam-container {
+    flex-direction: column;
+  }
 }
