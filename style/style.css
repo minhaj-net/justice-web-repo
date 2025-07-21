@@ -93,7 +93,49 @@ main {
   margin-top: 20px;
 }
 
-/*  */
+/* practise area container style */
+.practise-title {
+  font-weight: 800;
+  font-size: 2.65rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card-container {
+  margin-top: 60px;
+  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.card img {
+  margin: 0 auto;
+}
+.card {
+  width: 300px;
+  text-align: center;
+  padding-inline-start: 20px;
+}
+.card-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fa-arrow-right {
+  color: white;
+  background-color: #b68c5a;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  padding: 6px;
+  border-radius: 50%;
+}
+.card2 {
+  background: linear-gradient(
+    to top,
+    rgba(243, 243, 243, 1),
+    rgba(243, 243, 243, 0)
+  );
+}
 
 /* media query for mobile responsive */
 @media screen and (max-width: 576px) {
@@ -116,5 +158,9 @@ main {
   }
   .nav-iteam-container {
     flex-direction: column;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 }
