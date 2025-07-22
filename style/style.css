@@ -136,6 +136,96 @@ main {
     rgba(243, 243, 243, 0)
   );
 }
+/* what are client sat section style */
+.client-img {
+  width: 100%;
+  border-radius: 30px;
+}
+.client-head-title {
+  font-weight: 800;
+  font-size: 2.65rem;
+  text-align: center;
+}
+.client-head-dis {
+  text-align: center;
+}
+.coder {
+  width: 80px;
+  border-radius: 50%;
+  display: block;
+  justify-items: center;
+}
+.overlay-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+}
+.overlay-dis {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+.client-container {
+  position: relative;
+  margin-top: 70px;
+}
+.overlay-container {
+  display: block;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(17, 17, 17, 0.8); */
+  /* padding: 30px; */
+  /* padding-bottom: 20%;
+  padding-top: 11%;
+  padding-left: 10px;
+  padding-right: 30px; */
+  padding-top: 120px;
+  width: 100%;
+}
+
+/* Frequently Asked Any Questions */
+.question-title {
+  font-weight: 800;
+  font-size: 2.65rem;
+}
+.question-header {
+  display: inline-block;
+  justify-items: center;
+  margin-top: 120px;
+}
+.ask-head {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+.ask-title {
+  margin-bottom: 30px;
+}
+.ask-span {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.question-container {
+  margin-top: 80px;
+}
+.question-container-img {
+  width: 100%;
+}
+.ask-head,
+.ask-span {
+  background-color: rgba(243, 243, 243, 1);
+  border-radius: 10px;
+}
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 120px;
+}
 
 /* media query for mobile responsive */
 @media screen and (max-width: 576px) {
@@ -162,5 +252,27 @@ main {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+  }
+  .banner-img {
+    border-radius: 0;
+  }
+  .overlay-container {
+    padding: 20px;
+  }
+  .overlay-title {
+    font-size: 1rem;
+  }
+  .overlay-dis {
+    color: black;
+    white-space: wrap;
+    overflow: hidden;
+  }
+  .question-container {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .question-header {
+    margin-bottom: 80px;
+    margin-top: 120px;
   }
 }
