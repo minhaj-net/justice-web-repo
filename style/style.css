@@ -8,6 +8,9 @@ main {
   max-width: 1140px;
   margin: 0 auto;
 }
+footer {
+  max-width: 1340px;
+}
 /* common style */
 .display-flex {
   display: flex;
@@ -279,7 +282,8 @@ main {
   width: 50%;
 }
 .contact-container-right input,
-textarea {
+textarea,
+.footer-input {
   background-color: rgba(243, 243, 243, 1);
   width: 100%;
   padding: 30px;
@@ -292,6 +296,54 @@ textarea {
   margin-top: 30px;
 }
 
+/* footer section style */
+.menu-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+}
+.footer-container {
+  background-color: rgba(17, 17, 17, 1);
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 120px 70px 120px 70px;
+  margin-top: 120px;
+}
+.footer-iteam {
+  list-style: none;
+}
+.footer-iteam li a {
+  text-decoration: none;
+  color: rgba(207, 207, 207, 1);
+}
+.footer-iteam li {
+  margin-bottom: 18px;
+}
+.footer-input {
+  width: 80%;
+  margin-top: 30px;
+}
+.footer-btn {
+  padding: 30px;
+  border-radius: 9px;
+}
+.footer-now-dis {
+  color: rgba(112, 112, 112, 1);
+  margin-bottom: 20px;
+}
+.last-foot {
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.frist-foot {
+  box-sizing: border-box;
+  margin-bottom: 12 0px;
+}
 /* media query for mobile responsive */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -349,5 +401,17 @@ textarea {
   }
   .contact-container-right {
     width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .frist-foot,
+  .last-foot,
+  .minhaj {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
   }
 }
